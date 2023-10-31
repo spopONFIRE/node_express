@@ -5,6 +5,8 @@ const app = express()
 
 const caminhoBase = path.jdin(__dirname, "tamplates")
 
+app.get('/usuarios')
+
 app.get('/', (requisicao, reposta) => {
     resposta.sendFile(`${caminhoBase}/index.html`)
 })
